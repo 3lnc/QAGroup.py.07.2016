@@ -15,8 +15,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
 <!-- General and theme style sheets -->
-<link rel="stylesheet" href="QAGroup.py.07.2016/vendors/reveal.js-3.3.0/css/reveal.css">
-<link rel="stylesheet" href="QAGroup.py.07.2016/vendors/reveal.js-3.3.0/css/theme/simple.css" id="theme">
+<link rel="stylesheet" href="vendors/css/reveal.css">
+<link rel="stylesheet" href="vendors/css/theme/simple.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -24,14 +24,14 @@ if( window.location.search.match( /print-pdf/gi ) ) {
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'QAGroup.py.07.2016/vendors/reveal.js-3.3.0/css/print/pdf.css';
+        link.href = 'vendors/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
 }
 
 </script>
 
 <!--[if lt IE 9]>
-<script src="QAGroup.py.07.2016/vendors/reveal.js-3.3.0/lib/js/html5shiv.js"></script>
+<script src="vendors/lib/js/html5shiv.js"></script>
 <![endif]-->
 
 <!-- Loading the mathjax macro -->
@@ -12369,7 +12369,7 @@ True
         <span class="c1"># invoked if attribute is not found in regular way</span>
         <span class="k">return</span> <span class="s1">&#39;&quot;</span><span class="si">{}</span><span class="s1">&quot; attribute unknown&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
         <span class="c1"># raise NotImplementedError in real world</span>
-        <span class="c1"># as explicit is better than implicit</span>
+        <span class="c1"># as eplicit is better than implicit</span>
         
 <span class="n">car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">(</span><span class="s1">&#39;BMW x5&#39;</span><span class="p">,</span> <span class="s1">&#39;Black&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">car</span><span class="o">.</span><span class="n">color</span><span class="p">)</span>
@@ -12964,8 +12964,8 @@ require(
       waitSeconds: 15
     },
     [
-      "QAGroup.py.07.2016/vendors/reveal.js-3.3.0/lib/js/head.min.js",
-      "QAGroup.py.07.2016/vendors/reveal.js-3.3.0/js/reveal.js"
+      "vendors/lib/js/head.min.js",
+      "vendors/js/reveal.js"
     ],
 
     function(head, Reveal){
@@ -12975,17 +12975,15 @@ require(
             controls: true,
             progress: true,
             history: true,
-            width: 1800,
-            height: 900,
 
             theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
             transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/none
 
             // Optional libraries used to extend on reveal.js
             dependencies: [
-                { src: "QAGroup.py.07.2016/vendors/reveal.js-3.3.0/lib/js/classList.js",
+                { src: "vendors/lib/js/classList.js",
                   condition: function() { return !document.body.classList; } },
-                { src: "QAGroup.py.07.2016/vendors/reveal.js-3.3.0/plugin/notes/notes.js",
+                { src: "vendors/plugin/notes/notes.js",
                   async: true,
                   condition: function() { return !!document.body.classList; } }
             ]
